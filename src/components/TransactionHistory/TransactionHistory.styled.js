@@ -1,24 +1,26 @@
 import { styled } from "styled-components";
 
-const Container = styled.section`
-    min-width: 320px;
-    max-width: 360px;
-    padding: 32px 32px;
-    margin-left: auto;
-    margin-right: auto;
-`
-const TableHead = styled.section`
+const Box = styled.div`
+  display: flex;
+  justify-content: center
+`;
+
+const TableHead = styled.thead`
 color: white;
 background-color: #00BCD5;
-padding: 10px;
-  border: 1px solid #2a2a2a;
+border: 1px solid #2a2a2a;
 `
 
-const TableBody = styled.section`
+const TableBody = styled.tbody`
 text-align: center;
 background-color: #ECF1F4;
+border: 1px solid #2a2a2a;
+`
+const TableHeader = styled.th`
 padding: 10px;
-  border: 1px solid #2a2a2a;
+`
+const TableData = styled.td`
+padding: 10px;
 `
 
-export { Container, TableHead, TableBody };
+export { Box, TableHead, TableBody, TableHeader, TableData };

@@ -1,14 +1,6 @@
 import { styled } from "styled-components";
 
-const Container = styled.section`
-    min-width: 320px;
-    max-width: 360px;
-    padding: 32px 32px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    display: flex;
-    flex-direction: column;
+const Box = styled.section`
     background-color: #EFF3F6;
 `
 const Title = styled.h2`
@@ -18,14 +10,13 @@ const Title = styled.h2`
     font-size: 32px;
     line-height: 42px;
     text-align: center;
-    margin: 0px;
 `
 
 const List = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15px;
+    padding: 16px;
 `
 
 const Item = styled.li`
@@ -60,4 +51,4 @@ const Percentage = styled.span`
 `;
 
 
-export { Container, Title, List, Item, Label, Percentage };
+export { Box, Title, List, Item, Label, Percentage };
